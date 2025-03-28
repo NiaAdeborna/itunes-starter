@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Dashboard</title>
+    <link rel="stylesheet" href="styes.css">
+</head>
+<body>
+    <h1>Manager Dashboard</h1>
+    <h2>Tasks</h2>
+
+
+    <!-- Button to open the modal -->
+    <button id="openTask">Add New Task</button>
+    <button class="logout-btn" onclick="logout()">Log Out</button>
+
+    <!-- Modal for adding tasks -->
+    <div id="modal" style="display:none;">
+        <div>
+            <span class="close">&times;</span>
+            <h3>Create New Task</h3>
+            <form>
+                <label for="name">Task Title: </label><input type="text" id="name"><br><br>
+                <label for="description">Description: </label><input type="text" id="description"><br><br>
+                <label for="date">Due Date: </label><input type="date" id="date"><br><br>
+                <label for="trainee">Assign to: </label><input type="text" id="trainee"><br><br>
+                <button type="button" id="saveTaskBtn">Save Task</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div id="taskList"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
