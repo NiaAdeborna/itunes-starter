@@ -44,6 +44,11 @@ button {
     font-size: 16px;
 }
 
+.small-btn {
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
 
 button:hover {
     background-color: #218838;
@@ -81,7 +86,7 @@ select {
     margin-top: 10px;
 }
 
-/* Modal */
+
 .modal {
     display: none;
     position: fixed;
@@ -93,33 +98,46 @@ select {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+/* Make the modal square and centered */
 .modal-content {
     background-color: white;
-    margin: 15% auto;
-    padding: 20px;
-    width: 50%;
+    width: 320px;
+    height: 360px;
+    margin: 10% auto;
+    padding: 15px;
     border-radius: 10px;
-}
-
-/* Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover {
-    color: black;
-    cursor: pointer;
-}
-
-/* Form */
-form {
+    box-sizing: border-box;
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    overflow-y: auto;
 }
+
+.modal-content h3 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+}
+
+input {
+    padding: 6px;
+    font-size: 14px;
+}
+
+button#saveTaskBtn {
+    margin-top: 8px;
+    font-size: 14px;
+    padding: 8px;
+}
+
 
 input, select, textarea {
     width: 100%;

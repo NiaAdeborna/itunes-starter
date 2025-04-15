@@ -16,20 +16,25 @@
     <button class="logout-btn" onclick="logout()">Log Out</button>
 
     <!-- Modal for adding tasks -->
-    <div id="modal" style="display:none;">
-        <div>
-            <span class="close">&times;</span>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+                <span class="close">&times;</span>
             <h3>Create New Task</h3>
             <form>
-                <label for="name">Task Title: </label><input type="text" id="name"><br><br>
-                <label for="description">Description: </label><input type="text" id="description"><br><br>
-                <label for="date">Due Date: </label><input type="date" id="date"><br><br>
-                <label for="trainee">Assign to: </label><input type="text" id="trainee"><br><br>
+                <label for="name">Task Title:</label>
+                <input type="text" id="name">
+                <label for="description">Description:</label>
+                <input type="text" id="description">
+                <label for="date">Due Date:</label>
+                <input type="date" id="date">
+                <label for="trainee">Assign to:</label>
+                <input type="text" id="trainee">
                 <button type="button" id="saveTaskBtn">Save Task</button>
             </form>
         </div>
     </div>
 
+   
 
 
     <div id="taskList"></div>
